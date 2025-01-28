@@ -345,7 +345,7 @@
       "nick": "Lucy Yeager",
       "premium": false,
       "totalLimit": 100,
-      "limit": 100,
+      "limit": 96,
       "uang": 10000,
       "lastclaim": 1738041090354,
       "lastrampok": 1738041090354
@@ -387,6 +387,84 @@
       "uang": 10000,
       "lastclaim": 1738042022162,
       "lastrampok": 1738042022162
+    },
+    "6283153497868@s.whatsapp.net": {
+      "vip": false,
+      "badword": 0,
+      "title": "",
+      "serialNumber": "b01b18527d65bace9925a9ba6dafbcba",
+      "nick": "Ray",
+      "premium": false,
+      "totalLimit": 100,
+      "limit": 100,
+      "uang": 10000,
+      "lastclaim": 1738043315922,
+      "lastrampok": 1738043315922
+    },
+    "601133268458@s.whatsapp.net": {
+      "vip": false,
+      "badword": 0,
+      "title": "",
+      "serialNumber": "4e5c755369cbca0c630cc887ba26dd7a",
+      "nick": "Aqil",
+      "premium": false,
+      "totalLimit": 100,
+      "limit": 100,
+      "uang": 10000,
+      "lastclaim": 1738043362424,
+      "lastrampok": 1738043362424
+    },
+    "247158741692555@lid": {
+      "vip": false,
+      "badword": 0,
+      "title": "",
+      "serialNumber": "cd190cf075a83ad18429e16ada5e32f6",
+      "nick": "Aww",
+      "premium": false,
+      "totalLimit": 100,
+      "limit": 100,
+      "uang": 10000,
+      "lastclaim": 1738043448827,
+      "lastrampok": 1738043448827
+    },
+    "81299989647378@lid": {
+      "vip": false,
+      "badword": 0,
+      "title": "",
+      "serialNumber": "110d229ff645ee2a7242490719194cc1",
+      "nick": "VallzRamah",
+      "premium": false,
+      "totalLimit": 100,
+      "limit": 100,
+      "uang": 10000,
+      "lastclaim": 1738043543225,
+      "lastrampok": 1738043543225
+    },
+    "182480560767037@lid": {
+      "vip": false,
+      "badword": 0,
+      "title": "",
+      "serialNumber": "ff921e4a69c7580e9c3c00eb7274e829",
+      "nick": "pppp",
+      "premium": false,
+      "totalLimit": 100,
+      "limit": 100,
+      "uang": 10000,
+      "lastclaim": 1738044268584,
+      "lastrampok": 1738044268584
+    },
+    "6283122108996@s.whatsapp.net": {
+      "vip": false,
+      "badword": 0,
+      "title": "",
+      "serialNumber": "2f8c0f589948231a6fe90b815221b139",
+      "nick": "aL",
+      "premium": false,
+      "totalLimit": 100,
+      "limit": 100,
+      "uang": 10000,
+      "lastclaim": 1738045370454,
+      "lastrampok": 1738045370454
     }
   },
   "chats": {
