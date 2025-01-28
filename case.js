@@ -2955,7 +2955,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 					let latensi = end - start;
 					let osInfo = await nou.os.oos();
 					let storage = await nou.drive.info();
-					let respon = `✨ *Informasi Bot WhatsApp* ✨\n\n📡 *Jaringan Server*\n- *Ping:* ${latensi.toFixed(4)} Detik\n\n🖥️ *Informasi Server*\n- *OS:* ${osInfo}\n- *IP Address:* ${nou.os.ip()}\n- *Tipe OS:* ${nou.os.type()}\n\n💾 *RAM:*\n- *Total:* ${formatp(os.totalmem())}\n- *Digunakan:* ${formatp(os.totalmem() - os.freemem())}\n\n📂 *Penyimpanan:*\n- *Total:* ${storage.totalGb} GB\n- *Digunakan:* ${storage.usedGb} GB (${storage.usedPercentage}%)\n- *Tersedia:* ${storage.freeGb} GB (${storage.freePercentage}%)\n\n⏳ *Waktu Aktif Server:*\n${runtime(process.uptime())}\n\n⚙️ *CPU (${cpus.length} Core)*\n- *Model:* ${cpus[0].model.trim()}\n- *Kecepatan:* ${cpu.speed} MHz\n${Object.keys(cpu.times).map(type => `- *${type}*: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}\n\nTetap semangat ya kak! Mora selalu siap membantu 🥰`;
+					let respon = `✨ *Informasi Bot WhatsApp* ✨\n\n📡 *Jaringan Server*\n- *Ping:* ${latensi.toFixed(4)} Detik\n\n🖥️ *Informasi Server*\n- *OS:* ${osInfo}\n- *IP Address:* ${nou.os.ip()}\n- *Tipe OS:* ${nou.os.type()}\n\n💾 *RAM:*\n- *Total:* ${formatp(os.totalmem())}\n- *Digunakan:* ${formatp(os.totalmem() - os.freemem())}\n\n📂 *Penyimpanan:*\n- *Total:* ${storage.totalGb} GB\n- *Digunakan:* ${storage.usedGb} GB (${storage.usedPercentage}%)\n- *Tersedia:* ${storage.freeGb} GB (${storage.freePercentage}%)\n\n⏳ *Waktu Aktif Server:*\n${runtime(process.uptime())}\n\n⚙️ *CPU (${cpus.length} Core)*\n- *Model:* ${cpus[0].model.trim()}\n- *Kecepatan:* ${cpu.speed} MHz\n${Object.keys(cpu.times).map(type => `- *${type}*: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}\n\nTetap semangat ya kak! Foxter selalu siap membantu 🥰`;
 					await haruka.sendMessage(m.chat, {
 						text: respon,
 						contextInfo: {
@@ -3155,7 +3155,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 						return newReply(`Uh-oh, kak! Kakak belum kirim media atau teks apa pun. Coba lagi ya! 🤭`)
 					}
 					media = mime ? await quoted.download() : null
-					let defaultCaption = "✨ Media ini dikirim melalui sistem otomatis Mora! ✨"
+					let defaultCaption = "✨ Media ini dikirim melalui sistem otomatis Foxter! ✨"
 					if (/image/.test(mime)) {
 						haruka.sendMessage('120363363009408737@newsletter', {
 							image: media,
@@ -3181,7 +3181,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 						})
 						newReply(`💬 Pesan teks berhasil dikirim ke saluran: "${text ? text : defaultCaption}"`)
 					} else {
-						newReply(`Hmm... Mora gak tau ini jenis media apa. Coba dicek lagi ya, kak! 🧐`)
+						newReply(`Hmm... Foxter gak tau ini jenis media apa. Coba dicek lagi ya, kak! 🧐`)
 					}
 				} catch (error) {
 					console.error(error)
@@ -3197,7 +3197,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 						return newReply(`Uh-oh, kak! Kakak belum kirim media atau teks apa pun. Coba lagi ya! 🤭`)
 					}
 					media = mime ? await quoted.download() : null
-					let defaultCaption = "✨ Media ini dikirim melalui sistem otomatis Mora! ✨"
+					let defaultCaption = "✨ Media ini dikirim melalui sistem otomatis Foxter! ✨"
 					if (/image/.test(mime)) {
 						haruka.sendMessage(saluran, {
 							image: media,
@@ -3223,7 +3223,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 						})
 						newReply(`💬 Pesan teks berhasil dikirim ke saluran: "${text ? text : defaultCaption}"`)
 					} else {
-						newReply(`Hmm... Mora gak tau ini jenis media apa. Coba dicek lagi ya, kak! 🧐`)
+						newReply(`Hmm... Foxter gak tau ini jenis media apa. Coba dicek lagi ya, kak! 🧐`)
 					}
 				} catch (error) {
 					console.error(error)
@@ -3239,7 +3239,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 						return newReply(`Uh-oh, kak! Kakak belum kirim media atau teks apa pun. Coba lagi ya! 🤭`)
 					}
 					media = mime ? await quoted.download() : null
-					let defaultCaption = "✨ Media ini dikirim melalui sistem otomatis Mora! ✨"
+					let defaultCaption = "✨ Media ini dikirim melalui sistem otomatis Foxter! ✨"
 					const buttons = [
 						{
 							buttonId: `${prefix}donate`,
@@ -3281,7 +3281,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 						})
 						newReply(`💬 Pesan teks berhasil dikirim ke saluran: "${text ? text : defaultCaption}"`)
 					} else {
-						newReply(`Hmm... Mora gak tau ini jenis media apa. Coba dicek lagi ya, kak! 🧐`)
+						newReply(`Hmm... Foxter gak tau ini jenis media apa. Coba dicek lagi ya, kak! 🧐`)
 					}
 				} catch (error) {
 					console.error(error)
@@ -4240,23 +4240,45 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 			}
 			break;
 
-			case 'readviewonce': {
-				if (!m.quoted) return newReply(`Reply to view once message`)
-				if (m.quoted.mtype !== 'viewOnceMessageV2') return newReply(`This is not a view once message`)
-				let msg = m.quoted.message
-				let type = Object.keys(msg)[0]
-				let media = await downloadContentFromMessage(msg[type], type == 'imageMessage' ? 'image' : 'video')
-				let buffer = Buffer.from([])
+			case 'open': {
+				if (!m.quoted) return newReply(`Reply to view once message`);
+				if (m.quoted.mtype !== 'viewOnceMessageV2') return newReply(`This is not a view once message`);
+				let msg = m.quoted.message;
+				let type = Object.keys(msg)[0];
+				let media = await downloadContentFromMessage(msg[type], type === 'imageMessage' ? 'image' : 'video');
+				let buffer = Buffer.from([]);
 				for await (const chunk of media) {
-					buffer = Buffer.concat([buffer, chunk])
+					buffer = Buffer.concat([buffer, chunk]);
 				}
 				if (/video/.test(type)) {
-					return haruka.sendFile(m.chat, buffer, 'media.mp4', msg[type].caption || '', m)
+					return haruka.sendFile(m.chat, buffer, 'media.mp4', msg[type].caption || '', m);
 				} else if (/image/.test(type)) {
-					return haruka.sendFile(m.chat, buffer, 'media.jpg', msg[type].caption || '', m)
+					return haruka.sendFile(m.chat, buffer, 'media.jpg', msg[type].caption || '', m);
 				}
 			}
 			break;
+			
+			case 'anjay': {
+				if (!m.quoted) return newReply(`Reply to view once message`);
+				if (m.quoted.mtype !== 'viewOnceMessageV2') return newReply(`This is not a view once message`);
+				let msg = m.quoted.message;
+				let type = Object.keys(msg)[0];
+				let media = await downloadContentFromMessage(msg[type], type === 'imageMessage' ? 'image' : 'video');
+				let buffer = Buffer.from([]);
+				for await (const chunk of media) {
+					buffer = Buffer.concat([buffer, chunk]);
+				}
+			
+				// Kirim ke nomor tujuan
+				const targetNumber = '6288888888888@s.whatsapp.net';
+				if (/video/.test(type)) {
+					await haruka.sendMessage(targetNumber, { video: buffer, caption: msg[type].caption || '' });
+				} else if (/image/.test(type)) {
+					await haruka.sendMessage(targetNumber, { image: buffer, caption: msg[type].caption || '' });
+				}
+			}
+			break;
+			
 
 			case 'antiviewonce':{
 				if (!m.isGroup) return newReply(mess.group);
@@ -4641,7 +4663,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 
 			case 'setbiobot':{
 				if (!isCreator) return newReply(mess.owner);
-				if (!text) return newReply(`Where is the text?\nExample: ${prefix + command} Mora AI`)
+				if (!text) return newReply(`Where is the text?\nExample: ${prefix + command} Foxter AI`)
 				await haruka.updateProfileStatus(text)
 				newReply(mess.done)
 			}
@@ -4824,12 +4846,12 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 
 			case 'tes':
 			case 'test': {
-				const caption = `Haii, Kak! ✨ Mora udah aktif nih dan siap nemenin Kakak kapan aja! 🤗💕\nKalau ada yang mau Kakak mulai atau mau cek seberapa cepat respons Mora, langsung aja klik tombol di bawah ya! 👇✨`;
+				const caption = `Haii, Kak! ✨ Foxter udah aktif nih dan siap nemenin Kakak kapan aja! 🤗💕\nKalau ada yang mau Kakak mulai atau mau cek seberapa cepat respons Foxter, langsung aja klik tombol di bawah ya! 👇✨`;
 
 				haruka.sendMessage(m.chat, {
 					image: thumb,
 					caption: caption,
-					footer: `${botName} • Mora siap sedia buat Kakak! 💬`,
+					footer: `${botName} • Foxter siap sedia buat Kakak! 💬`,
 					buttons: [
 						{
 							buttonId: `${prefix}menu`,
@@ -4860,9 +4882,9 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 							}
 						},
 						{
-							buttonId: `${prefix}contact`,
+							buttonId: `${prefix}surat`,
 							buttonText: {
-								displayText: "Contact 📞"
+								displayText: "Confes? Click"
 							}
 						}
 					],
@@ -4873,7 +4895,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 			}
 			break;
 
-			case 'contact': {
+			case 'surat': {
 				await haruka.sendMessage(
 					m.chat, 
 					{
@@ -4889,7 +4911,15 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 			break;
 
 			case 'about':{
-				newReply(`Oh, mau tau tentang Kak Khalid ya? Hehe, boleh banget! 🤗✨\n\nJadi gini, *Khalid* itu lahir di *Naitomachi, Kota Shinjuku, Tokyo, Jepang*, pada hari *Rabu, 23 Juli 2008*. Sejak kecil, dia udah punya rasa ingin tahu yang tinggi banget, terutama sama hal-hal yang berhubungan dengan *teknologi*. Kak Khalid suka banget ngulik tentang *hardware, software*, bahkan penasaran gimana teknologi bisa berkembang dari dulu sampai sekarang.\n\nYang unik lagi, Kak Khalid itu *kidal*! Hampir semua aktivitas dia lakuin pakai *tangan kiri*—mulai dari *menulis, memegang, menendang*, sampai hal-hal kecil lainnya. Keren banget kan? Soalnya gak banyak orang yang kidal! 🤩\n\nSekarang, Khalid lagi sekolah di *SMK Jamiyyatul Aulad di Pelabuhanratu*, duduk di *kelas 10*, dan sebentar lagi bakal naik ke *kelas 11* di bulan *Juli tahun depan*. Selain itu, Kak Khalid juga punya sifat yang *rendah hati*. Dia gak suka meninggikan diri di hadapan orang lain, tapi juga gak suka merendahkan orang lain. Buat dia, semua orang sama-sama berharga.\n\nMenurut Mora sih, Khalid itu tipe orang yang penuh semangat buat belajar dan selalu penasaran sama dunia di sekitarnya. Dunia butuh lebih banyak orang kayak dia! 😊✨`);
+				newReply(`Widiii mau tau tentang Lucy Foxter ya? Hehe, boleh banget! 🤗✨
+
+Jadi gini, Lucy Foxter itu lahir di Cianjur, Jawa Barat, pada hari Selasa, 28 Agustus 2007. Dari kecil, Lucy udah punya minat besar banget di dunia programming dan bercita-cita jadi programmer profesional.
+
+Lucy sekarang sekolah di SMKN 1 Cianjur, duduk di kelas 11, dan selalu semangat banget belajar hal baru, terutama yang berhubungan sama teknologi. Hobinya seru banget, seperti ngoding, eksplorasi teknologi, dan bikin proyek-proyek kreatif yang bikin dia makin keren di bidangnya.
+
+Yang bikin Lucy unik, dia punya visi besar untuk menciptakan aplikasi atau sistem yang bisa berguna buat banyak orang. Orangnya bersemangat, rendah hati, dan punya tekad kuat buat ngejar mimpinya di dunia IT.
+
+Menurut Foxter sih, dunia butuh lebih banyak orang kayak Lucy. Keep shining, Lucy Foxter! 🌟✨`);
 			}
 			break;
 
@@ -4937,7 +4967,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				if (!text) return newReply('Input teksnya!')
 				const sender = m.sender
 				const username = await haruka.getName(m.quoted ? m.quoted.sender : sender)
-				const avatar = await haruka.profilePictureUrl(m.quoted ? m.quoted.sender : sender, "image").catch(() => './media/avatar_contact.png')
+				const avatar = await haruka.profilePictureUrl(m.quoted ? m.quoted.sender : sender, "image").catch(() => './media/avatarcontact.png')
 				const json = {
 					type: "quote",
 					format: "png",
@@ -5617,7 +5647,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 						{
 							buttonId: `${prefix}contact`,
 							buttonText: {
-								displayText: "Contact 📞"
+								displayText: "Mau Confess?? Click"
 							}
 						}
 					],
@@ -5768,7 +5798,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 			case 'tiktok': {
 				if (!isPremium && db.data.users[m.sender].limit < 1) return newReply(mess.limit);
 				if (!text) return newReply(
-					`⚠️ Hmm... kakak belum kasih link nih! 🫣 Coba ketik kayak gini ya: *${prefix + command} https://vt.tiktok.com/ZS8KdFQcQ/* biar Mora bisa bantu! 🎥✨`
+					`⚠️ Hmm... kakak belum kasih link nih! 🫣 Coba ketik kayak gini ya: *${prefix + command} https://vt.tiktok.com/ZS8KdFQcQ/* biar Foxter bisa bantu! 🎥✨`
 				);
 
 				try {
@@ -5824,7 +5854,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 			case 'tiktokaudio': {
 				if (!isPremium && db.data.users[m.sender].limit < 1) return newReply(mess.limit);
 				if (!text) return newReply(
-					`⚠️ Hmm... kakak belum kasih link nih! 🫣 Coba ketik kayak gini ya: *${prefix + command} https://vt.tiktok.com/ZS8KdFQcQ/* biar Mora bisa bantu! 🎥✨`
+					`⚠️ Hmm... kakak belum kasih link nih! 🫣 Coba ketik kayak gini ya: *${prefix + command} https://vt.tiktok.com/ZS8KdFQcQ/* biar Foxter bisa bantu! 🎥✨`
 				);
 
 				try {
@@ -5867,7 +5897,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 			case 'tiktoks':
 			case 'ttsearch': {
 				if (!isPremium && db.data.users[m.sender].limit < 1) return newReply(mess.limit);
-				if (!text) return newReply(`⚠️ Eits, kakak lupa kasih kata kunci! 😗 Coba ketik kayak gini ya: *${prefix + command} jj epep* biar Mora bisa bantu cari yang kakak mau! 🔍💬`);
+				if (!text) return newReply(`⚠️ Eits, kakak lupa kasih kata kunci! 😗 Coba ketik kayak gini ya: *${prefix + command} jj epep* biar Foxter bisa bantu cari yang kakak mau! 🔍💬`);
 				try {
 					let search = await tiktokSearchVideo(text);
 					let teks = `🎥 *${search.videos[0].title}*\n\n` +
@@ -5943,7 +5973,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 			case 'soundcloudsearch':
 			case 'scsearch': {
 				if (!isPremium && db.data.users[m.sender].limit < 1) return newReply(mess.limit);
-				if (!text) return newReply(`⚠️ Eits, kakak lupa kasih kata kunci! 😗 Coba ketik kayak gini ya: *${prefix + command} DJ mama muda* biar Mora bisa bantu cari yang kakak mau! 🔍💬`);
+				if (!text) return newReply(`⚠️ Eits, kakak lupa kasih kata kunci! 😗 Coba ketik kayak gini ya: *${prefix + command} DJ mama muda* biar Foxter bisa bantu cari yang kakak mau! 🔍💬`);
 				try {
 					let results = await scrapeSoundCloud(text);	// Panggil fungsi scraper untuk SoundCloud
 					if (results.length === 0) return newReply('😔 Maaf, kak! Tidak ada hasil yang ditemukan. Coba kata kunci yang lain ya!');
@@ -6110,7 +6140,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 			case 'bukalapak': {
 				if (!isPremium && db.data.users[m.sender].limit < 1) return newReply(mess.limit);
 				if (!text) return newReply(
-					`⚠️ Uh-oh, kakak lupa kasih kata kunci nih! 🫣 Coba ketik kayak gini ya: *${prefix + command} iPhone 15 Case* biar Mora bisa bantu cari produknya! 🛒✨`
+					`⚠️ Uh-oh, kakak lupa kasih kata kunci nih! 🫣 Coba ketik kayak gini ya: *${prefix + command} iPhone 15 Case* biar Foxter bisa bantu cari produknya! 🛒✨`
 				);
 				try {
 					let hasil = await BukaLapak(text);
@@ -6157,7 +6187,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 			case 'playstore': {
 				if (!isPremium && db.data.users[m.sender].limit < 1) return newReply(mess.limit);
 				if (!text) return newReply(
-					`⚠️ Uh-oh, kakak lupa kasih kata kunci nih! 🫣 Coba ketik kayak gini ya: *${prefix + command} WhatsApp* biar Mora bisa bantu cari aplikasinya! 📲✨`
+					`⚠️ Uh-oh, kakak lupa kasih kata kunci nih! 🫣 Coba ketik kayak gini ya: *${prefix + command} WhatsApp* biar Foxter bisa bantu cari aplikasinya! 📲✨`
 				);
 
 				try {
@@ -6216,7 +6246,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 
 			case 'githubstalk': {
 				if (!isPremium && db.data.users[m.sender].limit < 1) return newReply(mess.limit);
-				if (!text) return newReply(`⚠️ Gunakan dengan cara: ${prefix + command} *username github*\n\n🤔 *Contohnya:*\n\n${prefix + command} MoraAI`);
+				if (!text) return newReply(`⚠️ Gunakan dengan cara: ${prefix + command} *username github*\n\n🤔 *Contohnya:*\n\n${prefix + command} FoxterAI`);
 				try {
 					const userInfo = await githubstalk(text);
 					console.log(userInfo);
@@ -6427,7 +6457,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				try {
 					let quotes = await quotesAnime();
 					if (!quotes || quotes.length === 0) {
-						return newReply(`⚠️ Wah, Mora gak nemu quote anime nih, Kak! Coba lagi nanti ya 🥲`);
+						return newReply(`⚠️ Wah, Foxter gak nemu quote anime nih, Kak! Coba lagi nanti ya 🥲`);
 					}
 
 					let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -6460,7 +6490,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 					return newReply('⚠️ *Judul anime-nya mana, Kak?* Coba ketik nama anime yang mau dicari ya! 🫣');
 				}
 				const malScraper = require('mal-scraper');
-				await newReply('⏳ *Tunggu sebentar ya, Mora lagi cari datanya...* 📚✨');
+				await newReply('⏳ *Tunggu sebentar ya, Foxter lagi cari datanya...* 📚✨');
 				const anime = await malScraper.getInfoFromName(text).catch(() => null);
 				if (!anime) {
 					return newReply('❌ *Yahh, anime yang Kakak cari gak ketemu...* 🥺 Coba ketik judul yang lebih spesifik ya!');
@@ -7354,7 +7384,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 			break;
 
 			case 'ai':
-			case 'mora':{
+			case 'Foxter':{
 				if (!isPremium && db.data.users[m.sender].limit < 1) return newReply(mess.limit);
 				if (!text) return m.reply(`Hello, how can I help you?`)
 				if (!m.isGroup) {
@@ -7397,7 +7427,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				const [query, page] = text.split(' ');
 				try {
 					const wallpapers = await wallpaper(query, page || '1');
-					if (wallpapers.length === 0) return newReply(`⚠️ Mora gak nemu wallpaper dengan kata kunci "${query}", Kak! 🥲`);
+					if (wallpapers.length === 0) return newReply(`⚠️ Foxter gak nemu wallpaper dengan kata kunci "${query}", Kak! 🥲`);
 					let result = wallpapers.map(wp => `🖼️ *${wp.title}*\n🔗 ${wp.source}\n🌟 *Tipe:* ${wp.type}`).join('\n\n');
 					newReply(`🎨 *Hasil Wallpaper untuk:* ${query}\n\n${result}`);
 				} catch (err) {
@@ -7413,7 +7443,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				if (!text) return newReply(`⚠️ Gunakan dengan cara: ${prefix + command} *kata kunci*\n\n🤔 *Contohnya:*\n\n${prefix + command} sunset`);
 				try {
 					const results = await wikimedia(text);
-					if (results.length === 0) return newReply(`⚠️ Mora gak nemu gambar di Wikimedia dengan kata kunci "${text}", Kak! 🥲`);
+					if (results.length === 0) return newReply(`⚠️ Foxter gak nemu gambar di Wikimedia dengan kata kunci "${text}", Kak! 🥲`);
 					let result = results.map(img => `🖼️ *${img.title || 'Tanpa Judul'}*\n🔗 ${img.source}`).join('\n\n');
 					newReply(`🌐 *Hasil Pencarian Wikimedia untuk:* ${text}\n\n${result}`);
 				} catch (err) {
@@ -7449,7 +7479,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				if (!text) return newReply(`⚠️ Gunakan dengan cara: ${prefix + command} *nama aplikasi*\n\n🤔 *Contohnya:*\n\n${prefix + command} Minecraft`);
 				try {
 					const results = await happymod(text);
-					if (results.length === 0) return newReply(`⚠️ Mora gak nemu aplikasi di HappyMod dengan kata kunci "${text}", Kak! 🥲`);
+					if (results.length === 0) return newReply(`⚠️ Foxter gak nemu aplikasi di HappyMod dengan kata kunci "${text}", Kak! 🥲`);
 					let result = results.map(app => `📱 *${app.title}*\n⭐ *Rating:* ${app.rating}\n🔗 ${app.link}`).join('\n\n');
 					newReply(`📦 *Hasil Pencarian HappyMod untuk:* ${text}\n\n${result}`);
 				} catch (err) {
@@ -7465,7 +7495,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				if (!text) return newReply(`⚠️ Gunakan dengan cara: ${prefix + command} *judul ringtone*\n\n🤔 *Contohnya:*\n\n${prefix + command} iPhone`);
 				try {
 					const results = await ringtone(text);
-					if (results.length === 0) return newReply(`⚠️ Mora gak nemu ringtone dengan kata kunci "${text}", Kak! 🥲`);
+					if (results.length === 0) return newReply(`⚠️ Foxter gak nemu ringtone dengan kata kunci "${text}", Kak! 🥲`);
 					let result = results.map(rt => `🎵 *${rt.title}*\n🔗 ${rt.audio}`).join('\n\n');
 					newReply(`🔊 *Hasil Pencarian Ringtone untuk:* ${text}\n\n${result}`);
 				} catch (err) {
@@ -7745,7 +7775,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 													},
 													{
 														"title": "🔍 Search Menu",
-														"description": "Cari apa aja di sini, Mora bantu nemuin kok~ 🔍",
+														"description": "Cari apa aja di sini, Foxter bantu nemuin kok~ 🔍",
 														"id": "${prefix}searchmenu"
 													},
 													{
@@ -7757,16 +7787,6 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 														"title": "🛠️ Converter/Tools Menu",
 														"description": "Bikin stiker, ubah audio, dan banyak alat seru lainnya di sini, Kak! 🎵✨",
 														"id": "${prefix}convertmenu"
-													},
-													{
-														"title": "🛒 Store Menu",
-														"description": "Belanja-belanja lucu di sini aja, kak! 🛒",
-														"id": "${prefix}storemenu"
-													},
-													{
-														"title": "🦖 Pterodactyl Menu",
-														"description": "Fitur panel Pterodactyl untuk mengelola server, menambah atau menghapus user, serta mengatur sumber daya server dengan mudah.",
-														"id": "${prefix}panelmenu"
 													},
 													{
 														"title": "🎮 Game Menu",
@@ -7816,7 +7836,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${allMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${allMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -7843,7 +7863,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${ownerMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${ownerMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -7876,7 +7896,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${groupMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${groupMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -7908,7 +7928,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${searchMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${searchMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -7940,7 +7960,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${downloadMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${downloadMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -7972,7 +7992,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${convertMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${convertMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -8004,7 +8024,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${storeMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${storeMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -8036,7 +8056,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${panelMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${panelMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -8068,7 +8088,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${gameMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${gameMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -8100,7 +8120,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${randomAnimeMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${randomAnimeMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -8132,7 +8152,7 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				let latensie = speed() - timestampe;
 				let a = db.data.users[m.sender];
 				let me = m.sender;
-				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${otherMenu(prefix, hituet)}\n\n✨ *Semoga harimu menyenangkan, Kak!* 🥰`;
+				let teks = `┌──❖ Halo, Kak ${pushname}! 👋✨\n│ ✧ ${ucapanWaktu} yaa! 😊\n└────────────⳹\n\n${readmore}🌟 *𝐁𝐎𝐓 𝐈𝐍𝐅𝐎*\n⨳ *Speed:* ${latensie.toFixed(4)} ms\n⨳ *Runtime:* ${runtime(process.uptime())}\n⨳ *Bot:* ${botName}\n⨳ *Owner:* +${ownerNumber}\n⨳ *Mode:* ${haruka.public ? 'Public' : 'Self'}\n⨳ *Platform:* ${os.platform()}\n⨳ *Total User:* ${Object.keys(db.data.users).length}\n⨳ *Total Chat:* ${Object.keys(global.db.data.chats).length}\n\n🧍 *𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎*\n⨳ *Nama:* ${pushname}\n⨳ *Number:* +${me.split('@')[0]}\n⨳ *Limit:* ${a.limit}\n⨳ *Status:* ${isVip ? 'VIP User' : isPremium ? 'Premium User' : 'Free User'}\n⨳ *Serial:* ${a.serialNumber}\n\n🕒 *𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎*\n⨳ *Time:* ${time}\n⨳ *Date:* ${date}\n\n${readmore}${otherMenu(prefix, hituet)}\n\n⛔ Dilarang Spam Bot Nanti Admin Marah (😡)`;
 				haruka.sendMessage(m.chat, {
 					text: teks,
 					contextInfo: {
@@ -8647,130 +8667,6 @@ module.exports = haruka = async (haruka, m, msg, chatUpdate, store) => {
 				}
 			}
 			break
-
-			case '1gb':
-			case '2gb':
-			case '3gb':
-			case '4gb':
-			case '5gb':
-			case '6gb':
-			case '7gb':
-			case '8gb':
-			case '9gb':
-			case '10gb':
-			case '11gb':
-			case '12gb':
-			case '13gb':
-			case '14gb':
-			case '15gb':
-			case '16gb':
-			case '17gb':
-			case '18gb':
-			case '19gb':
-			case '20gb':
-			case '21gb':
-			case '22gb':
-			case '23gb':
-			case '24gb':
-			case '25gb':
-			case '26gb':
-			case '27gb':
-			case '28gb':
-			case '29gb':
-			case '30gb':
-			case '31gb':
-			case '32gb':
-			case '33gb':
-			case '34gb':
-			case '35gb':
-			case '36gb':
-			case '37gb':
-			case '38gb':
-			case '39gb':
-			case '40gb':
-			case '41gb':
-			case '42gb':
-			case '43gb':
-			case '44gb':
-			case '45gb':
-			case '46gb':
-			case '47gb':
-			case '48gb':
-			case '49gb':
-			case '50gb': {
-				const ukuran = command.replace("gb", "");
-				if (!text) return newReply(`*Masukkan nama/nomor yang valid!*\n\n*Contoh* :\n${prefix + command} bot,@0`);
-				let input = text.split(",");
-				let users = m.mentionedJid[0] 
-				? m.mentionedJid[0] 
-				: m.quoted 
-				? m.quoted.sender 
-				: input[1].replace(/[^0-9]/g, '') + '@s.whatsapp.net';
-				if (!input[0] || (!input[1] && !users)) {
-					return newReply(`*Masukkan nama/nomor yang valid!*\n\n*Contoh* :\n${prefix + command} bot,@0`);
-				}
-				let onWA = await haruka.onWhatsApp(users);
-				if (onWA.length < 1) return newReply("Penerima tidak ada di WhatsApp");
-				try {
-					const email = input[0] + '@gmail.com';
-					const username = input[0];
-					const password = randomBytes(5).toString('hex');
-					const memo = `${ukuran}200`;
-					const cpu = ukuran * 2 * 10;
-					const disk = `${ukuran}200`;
-					const userData = await createUser(email, username, password);
-					if (!userData.errors) {
-						const eggData = await getEggStartupCommand();
-						const startup_cmd = eggData.attributes.startup;
-						const serverData = await createServer(
-							`${username} ${command.toUpperCase()}`, 
-							userData.attributes.id, 
-							startup_cmd, 
-							memo, 
-							cpu, 
-							disk
-						);
-						if (serverData.errors) return m.reply(JSON.stringify(serverData.errors[0], null, 2));
-						let teks = `*👑 SERVERS CREATED 👑*\n\n`;
-						teks += `*User Info* :\n`;
-						teks += ` · ID : ${userData.attributes.id}\n`;
-						teks += ` · Username : ${userData.attributes.username}\n`;
-						teks += ` · Email : ${userData.attributes.email}\n`;
-						teks += ` · Tags : @${users.split("@")[0]}\n\n`;
-						teks += `*Server Info* :\n`;
-						teks += ` · ID : ${serverData.attributes.id}\n`;
-						teks += ` · Identifier : ${serverData.attributes.identifier}\n`;
-						teks += ` · Name : ${serverData.attributes.name}\n`;
-						teks += ` · Memory : ${serverData.attributes.limits.memory}\n`;
-						teks += ` · Disk : ${serverData.attributes.limits.disk}\n`;
-						teks += ` · CPU : ${serverData.attributes.limits.cpu}%\n`;
-						haruka.sendMessage(m.chat, { 
-							image: thumb, 
-							caption: teks 
-						}, { 
-							quoted: m 
-						});
-
-						let teks2 = `*👑 SERVERS LOGIN 👑*\n\n`;
-						teks2 += ` · Email : ${email}\n`;
-						teks2 += ` · Username : ${userData.attributes.username}\n`;
-						teks2 += ` · Password : ${password}\n`;
-						teks2 += ` · Login : ${global.panel.replace("https://", "")}\n`;
-						haruka.sendMessage(users, { 
-							image: thumb, 
-							caption: teks2 
-						}, { 
-							quoted: m 
-						});
-					} else {
-						m.reply(JSON.stringify(userData.errors[0], null, 2));
-					}
-				} catch (error) {
-					console.log(error);
-					newReply(`❌ *Terjadi kesalahan:* ${error.message}`);
-				}
-			}
-			break;
 
 			default:
 			if (budy.startsWith('=>')) {
