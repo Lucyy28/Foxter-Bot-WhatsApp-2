@@ -1,1 +1,217 @@
-{}
+{
+  "users": {
+    "6283101799665@s.whatsapp.net": {
+      "vip": false,
+      "badword": 0,
+      "title": "",
+      "serialNumber": "9217668d688fe3268fecbe5c14ffeb8c",
+      "nick": "Lucy Yeager",
+      "premium": false,
+      "totalLimit": 100,
+      "limit": 100,
+      "uang": 10000,
+      "lastclaim": 1738030484075,
+      "lastrampok": 1738030484075
+    },
+    "6281543307009@s.whatsapp.net": {
+      "vip": false,
+      "badword": 0,
+      "title": "",
+      "serialNumber": "9949d47140a2b6f61c521d26ec75358a",
+      "nick": "Parr",
+      "premium": false,
+      "totalLimit": 100,
+      "limit": 100,
+      "uang": 10000,
+      "lastclaim": 1738030540401,
+      "lastrampok": 1738030540401
+    },
+    "6285721403448@s.whatsapp.net": {
+      "vip": false,
+      "badword": 0,
+      "title": "",
+      "serialNumber": "8591ab4de534914d58d332e8ef461975",
+      "nick": "+62 857-2140-3448",
+      "premium": false,
+      "totalLimit": 100,
+      "limit": 98,
+      "uang": 10000,
+      "lastclaim": 1738030640384,
+      "lastrampok": 1738030640384
+    },
+    "120363374006048687@newsletter": {
+      "vip": false,
+      "badword": 0,
+      "title": "",
+      "serialNumber": "38e7308c14fa17ff4d38adc65f7c4315",
+      "premium": false,
+      "totalLimit": 100,
+      "limit": 100,
+      "uang": 10000,
+      "lastclaim": 1738030772868,
+      "lastrampok": 1738030772868
+    }
+  },
+  "database": {},
+  "chats": {
+    "6283101799665@s.whatsapp.net": {
+      "badword": false,
+      "antiforeignnum": false,
+      "antiviewonce": false,
+      "antibot": false,
+      "antispam": false,
+      "antimedia": false,
+      "antiimage": false,
+      "antivideo": false,
+      "antiaudio": false,
+      "antisticker": false,
+      "anticontact": false,
+      "antilocation": false,
+      "antidocument": false,
+      "antilink": false,
+      "antilinkgc": false,
+      "mute": false,
+      "liststore": {}
+    },
+    "120363392798915967@g.us": {
+      "badword": false,
+      "antiforeignnum": false,
+      "antiviewonce": false,
+      "antibot": false,
+      "antispam": false,
+      "antimedia": false,
+      "antiimage": false,
+      "antivideo": false,
+      "antiaudio": false,
+      "antisticker": false,
+      "anticontact": false,
+      "antilocation": false,
+      "antidocument": false,
+      "antilink": false,
+      "antilinkgc": false,
+      "mute": false,
+      "liststore": {}
+    },
+    "120363373529381531@g.us": {
+      "badword": false,
+      "antiforeignnum": false,
+      "antiviewonce": false,
+      "antibot": false,
+      "antispam": false,
+      "antimedia": false,
+      "antiimage": false,
+      "antivideo": false,
+      "antiaudio": false,
+      "antisticker": false,
+      "anticontact": false,
+      "antilocation": false,
+      "antidocument": false,
+      "antilink": false,
+      "antilinkgc": false,
+      "mute": false,
+      "liststore": {}
+    },
+    "6285721403448@s.whatsapp.net": {
+      "badword": false,
+      "antiforeignnum": false,
+      "antiviewonce": false,
+      "antibot": false,
+      "antispam": false,
+      "antimedia": false,
+      "antiimage": false,
+      "antivideo": false,
+      "antiaudio": false,
+      "antisticker": false,
+      "anticontact": false,
+      "antilocation": false,
+      "antidocument": false,
+      "antilink": false,
+      "antilinkgc": false,
+      "mute": false,
+      "liststore": {}
+    },
+    "120363374006048687@newsletter": {
+      "badword": false,
+      "antiforeignnum": false,
+      "antiviewonce": false,
+      "antibot": false,
+      "antispam": false,
+      "antimedia": false,
+      "antiimage": false,
+      "antivideo": false,
+      "antiaudio": false,
+      "antisticker": false,
+      "anticontact": false,
+      "antilocation": false,
+      "antidocument": false,
+      "antilink": false,
+      "antilinkgc": false,
+      "mute": false,
+      "liststore": {}
+    }
+  },
+  "game": {},
+  "settings": {
+    "6283101799665@s.whatsapp.net": {
+      "totalhit": 0,
+      "totalError": 0,
+      "online": false,
+      "safesearch": false,
+      "autosticker": false,
+      "autodownload": false,
+      "autobio": false,
+      "autoread": false,
+      "autorecordtype": false,
+      "autorecord": false,
+      "autotype": false,
+      "autoblocknum": false,
+      "onlygc": false,
+      "onlypc": false,
+      "watermark": {
+        "packname": "Mora AI",
+        "author": "K.R-dev."
+      },
+      "about": {
+        "bot": {
+          "nick": "Lucy Yeager",
+          "alias": "Mora AI"
+        },
+        "owner": {
+          "nick": "Lucy Yeager",
+          "alias": "6283101799665"
+        }
+      }
+    },
+    "6285721403448@s.whatsapp.net": {
+      "totalhit": 0,
+      "totalError": 0,
+      "online": false,
+      "safesearch": false,
+      "autosticker": false,
+      "autodownload": false,
+      "autobio": false,
+      "autoread": false,
+      "autorecordtype": false,
+      "autorecord": false,
+      "autotype": false,
+      "autoblocknum": false,
+      "onlygc": false,
+      "onlypc": false,
+      "watermark": {
+        "packname": "Mora AI",
+        "author": "K.R-dev."
+      },
+      "about": {
+        "bot": {
+          "nick": "+62 857-2140-3448",
+          "alias": "Mora AI"
+        },
+        "owner": {
+          "nick": "+62 831-0179-9665",
+          "alias": "6283101799665"
+        }
+      }
+    }
+  },
+  "message": {}
+}

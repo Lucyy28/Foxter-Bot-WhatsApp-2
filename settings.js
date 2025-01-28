@@ -7,14 +7,14 @@ global.socialm = 'GitHub: Tidak diketahui ❌'
 global.location = '11 Naitōmachi, Shinjuku City, Tokyo 160-0014, Jepang'
 
 global.botName = 'Mora AI'
-global.ownerNumber = '6288213993436'
+global.ownerNumber = '6285721403448'
 global.ownerName = 'K.R-dev'
 global.website = 'https://www.rizalzee.my.id'
 global.wagc = 'https://www.rizalzee.my.id'
 global.packname = 'Mora AI'
 global.author = 'K.R-dev.'
-global.creator = '6288213993436@s.whatsapp.net'
-global.premium = ['6288213993436']
+global.creator = '6285721403448@s.whatsapp.net'
+global.premium = ['6285721403448']
 global.hituet = 0
 global.prefa = ['','.','/'];
 
@@ -32,11 +32,11 @@ global.location = '1',
 global.typereply = 'v4'
 global.autoblocknumber = '62'
 global.antiforeignnumber = '62'
-global.welcome = true;
-global.anticall = true;
+global.welcome = false;
+global.anticall = false;
 global.autoswview = false;
-global.adminevent = true;
-global.groupevent = true;
+global.adminevent = false;
+global.groupevent = false;
 
 global.limit = {
 	free: 30,
