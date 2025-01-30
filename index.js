@@ -1,6 +1,5 @@
-///BUY FULL NO ENC ( 088213993436 )
-const { spawn } = require('child_process')
-const path = require('path')
+const { spawn } = require('child_process');
+const path = require('path');
 
 function startHaruka() {
 	let args = [path.join(__dirname, 'main.js'), ...process.argv.slice(2)]
@@ -20,5 +19,5 @@ function startHaruka() {
 		console.error('Exited with code:', code)
 		if (code == '.' || code == 1 || code == 0) startHaruka()
 	})
-}
+};
 startHaruka()

@@ -1,86 +1,124 @@
-///BUY FULL NO ENC ( 088213993436 )
-const fs = require('fs')
-const chalk = require('chalk')
+/* 
+BACA INI SEBELUM RECODE !!!!
 
-global.ytname = 'YouTube: DanzSkuyy99'
-global.socialm = 'GitHub: Lucyy28'
-global.location = 'Jl. Raya Cianjur, Kecamatan Cianjur, Kabupaten Cianjur, Jawa Barat 43212, Indonesia'
+Script By : Khalid Al-Khawarizmi / khalid
+Uploader by : MUHAMMAD SYIFARIZAL / rizal-dev
 
-global.botName = 'Foxter Bot'
-global.ownerNumber = '6283101799665'
-global.ownerName = 'Firdan Ardiansyah'
-global.website = 'Coming Soon...'
-global.wagc = 'Coming Soon...'
-global.packname = 'Foxter AI'
-global.author = 'Lucy Foxter'
-global.creator = '6283101799665@s.whatsapp.net'
-global.premium = ['6283101799665']
-global.hituet = 0
-global.prefa = ['','.','/'];
+• Owner : 6285655548594 
+• Contributor : 6283119115977
+• Castomer Service : 6288213993436
 
-global.saluran = 'https://whatsapp.com/channel/0029Vb1FZAQKQuJJGIctsS21'
-global.saluranName = 'Lucy Dump'
-global.sessionName = 'session'
+NOTE : mau replod script jangan lupa credits !!!!!
 
-global.panel = '';
-global.cred = '';
-global.apiuser = '';
-global.eggs = '15',
-global.nets = '5',
-global.location = '1',
+TEAM :  < K.R > © 2022-2025
+----------------------------------------------------------------------
+Thanks To :                                
+- Allah Swt          
+- My Parents       
+- rizal-dev        
+- khalid
+- Creator Bot Lainnya
+- Pengguna Bot Yang Selalu Support
+----------------------------------------------------------------------
 
-global.typereply = 'v4'
-global.autoblocknumber = '62'
-global.antiforeignnumber = '62'
-global.welcome = false;
-global.anticall = false;
-global.autoswview = false;
-global.adminevent = false;
-global.groupevent = false;
+*/
+
+const fs = require('fs');
+const chalk = require('chalk');
+
+global.ytname = 'YouTube: @zal_x_u'; // Nama YouTube Kamu
+global.socialm = 'GitHub: ???'; // Nama GitHub Kamu
+global.location = '11 Naitōmachi, Shinjuku City, Tokyo 160-0014, Jepang'; // Lokasi Kamu
+
+global.botName = 'Mora AI'; // Nama Bot Kamu
+global.ownerNumber = '6283119115977'; // Nomor Kamu
+global.ownerName = 'K.R'; // Nama Kamu
+global.website = 'https://t.me/rizaldef'; // Web Kamu
+global.wagc = 'https://www.khaliddesu.my.id'; // Web Kamu
+global.packname = botName; // Nama Pack
+global.author = ownerName; // Nama Author
+global.footer = '© 2022-2025 • K.R';
+global.creator = '6283119115977@s.whatsapp.net'; // Nomor Creator
+global.premium = ['6283119115977']; // User Premium
+global.hituet = 0 // Hit Command
+global.prefa = '.'; // Prefix
+global.tempatDB = 'database.json'; // Tempat Database
+
+global.saluran = '120363363009408737@newsletter'; // ID Saluran Kamu
+global.saluranName = ownerName; // Nama Saluran Kamu
+global.sessionName = 'session'; // Nama Folder Sesi Bot Kamu
+
+global.panel = ''; // Link Panel Kamu
+global.cred = ''; // API PTLA Kamu
+global.apiuser = ''; // API PTLC Kamu
+global.eggs = '15'; // Eggs Number (Recommended)
+global.nets = '5'; // Nets Number (Recommended)
+global.location = '1'; // Location Number (Recommended)
+
+global.typereply = 'v1'; // Gaya Reply v1-v4
+global.autoblocknumber = '62'; // Auto Block Number
+global.antiforeignnumber = '62'; // Anti Foreign Number
+global.welcome = true // Auto Welcome Msg
+global.anticall = true // Anti Call
+global.autoswview = true // Auto View Status
+global.adminevent = true // Admin Event Msg
+global.groupevent = true // Group Event Msg
+global.notifRegister = false // Notif Register
+global.onlyRegister = false // Hanya Pendaftar
+
+global.payment = {
+	dana: '+62 882-1399-3436',
+	gopay: '+62 882-1399-3436',
+	ovo: '+62 856-5554-8594',
+	qris: 'https://8030.us.kg/file/4ndGbHESVqV3.jpg',
+	shopeePay: '+62 856-5554-8594',
+	seabank: '+62 856-5554-8594'
+};
 
 global.limit = {
-	free: 30,
-	premium: 9999,
-	vip: 'VIP'
+	free: 10, // Limit User Non-premium
+	premium: 1000, // Limit User Premium
+	vip: 'VIP' // Limit User VIP 👑
 };
 
 global.uang = {
-	free: 10000,
-	premium: 1000000,
-	vip: 10000000
+	free: 1000, // Uang User Non-premium
+	premium: 1000000, // Uang User Premium
+	vip: 1000000 // Uang User VIP 👑
 };
 
 global.bot = {
-	limit: 0,
-	uang: 0
+	limit: 0, // Limit Awal Bot
+	uang: 0 // Uang Awal Bot
 };
 
 global.game = {
-	suit: {},
-	menfes: {},
-	tictactoe: {},
-	kuismath: {},
-	tebakbom: {},
+	suit: {}, // Sesi Game Suit
+	menfes: {}, // Sesi Menfess
+	tictactoe: {}, // Sesi Tictactoe
+	kuismath: {}, // Sesi Kuis Mathematics
+	tebakbom: {}, // Sesi Tebak Bom
 };
 
 global.mess = {
-	admin: 'Fitur ini khusus buat admin aja ya, Kak! 🫢',
-	botAdmin: 'Foxter harus jadi admin dulu biar bisa jalanin ini! 😭',
-	done: 'Sudah selesai! ✨',
-	error: 'Eh, ada yang salah nih... coba lagi ya, Kak! 😖',
-	group: 'Eits, fitur ini cuma bisa dipakai di grup~ 🫡',
-	limit: 'Yah, batas penggunaan Kakak udah habis... 😢',
-	noCmd: 'Hmm... perintahnya gak ada di daftar Foxter nih. Coba cek lagi ya, Kak! 🤔',
-	nsfw: 'Fitur NSFW dimatikan di grup ini, coba minta izin ke admin dulu ya~ 🫣',
-	owner: 'Hanya pemilik yang bisa akses fitur ini, Kak! 👑',
-	premium: 'Fitur ini cuma buat pengguna premium, Kak! 🌟',
-	private: 'Fitur ini cuma bisa dipakai di chat pribadi, Kak! 💌',
-	success: 'Yeay, berhasil! 🎉',
-	wait: 'Tunggu sebentar ya, Kak... Foxter lagi proses nih! ⏳🤗'
+	admin: "Fitur ini khusus buat admin aja ya, Kak! 🫢",
+	botAdmin: "Mora harus jadi admin dulu biar bisa jalanin ini! 😭",
+	done: "Done Kak! ✨",
+	error: "Eh, ada yang salah nih... coba lagi ya, Kak! 😖",
+	group: "Eits, fitur ini cuma bisa dipakai di grup~ 🫡",
+	limit: "Yah, limit penggunaan Kakak udah habis... 😢\n\nCoba ketik .buy untuk membeli dan menambah limit, atau upgrade ke premium ✨",
+	noCmd: "Hmm... perintahnya gak ada di daftar Mora nih. Coba cek lagi ya, Kak! 🤔",
+	nsfw: "Fitur NSFW dimatikan di grup ini, coba minta izin ke admin dulu ya~ 🫣",
+	owner: "Hanya pemilik yang bisa akses fitur ini, Kak! 👑",
+	premium: "Fitur ini cuma buat pengguna premium, Kak! 🌟",
+	private: "Fitur ini cuma bisa dipakai di chat pribadi, Kak! 💌",
+	success: "Yeay, berhasil! 🎉",
+	wait: "Tunggu sebentar ya, Kak... Mora lagi proses nih! ⏳🤗"
 };
 
-global.thumb = fs.readFileSync('./media/c08dc5cee5a3e63c8dc0add06bb6e6ca.jpg');
-global.thumbUrl = 'https://files.catbox.moe/838gt6.jpg';
+global.imageDonasi = 'https://files.catbox.moe/5td0tr.jpg'; // Url Image Donasi (dana, qris etc..)
+global.imageUrl = 'https://files.catbox.moe/5td0tr.jpg'; // Url Image
+global.imageBuffer = fs.readFileSync('./media/image.png'); // Buffer Image
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
